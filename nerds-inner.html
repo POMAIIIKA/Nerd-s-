@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nerd's</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="logo">
+					<a href="#">
+						<img src="http://logo.png" width="140" height="55" alt="Логотип Nerd's">
+					</a>
+				</div>
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="#">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li>
+							<a href="#">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="basket">
+					<a href="#">Корзина</a>
+				</div>
+			</div>
+		</header>
+		
+		
+		<div class="container">
+			<div class="poster">
+				<h1>Добро пожаловать в магазин<br>готовых макетов</h1>
+			</div>
+			<div class="facilities">
+				<form class="filter">
+					<fieldset><!-- предназначен для группирования элементов формы. -->
+						<legend>Стоимость:</legend>
+						<div class="range-filter">                                        <!-- Бегунок фильтр -->
+							<div class="range-controls">                                    <!-- Управление бегунками -->
+								<div class="scale">                                           <!-- Шкала (фоновая полоска) -->
+									<div class="bar"></div>                                     <!-- Выбранный отрезок (зелёная полоска) -->
+								</div>
+								<div class="toggle toggle-min"></div>                         <!-- Ползунок показывающий мин. -->
+								<div class="toggle toggle-max"></div>                         <!-- Ползунок показывающий макс. -->
+							</div>
+							<div class="price-controls">                                    <!-- Установка цен в ручную -->
+								<label class="min-price">                                     <!-- Объединение надписи с полем ввода минимальной цены -->
+									от <input name="min-price" type="text" value="0">         <!-- Поле ввода минимальной цены -->								
+								</label>
+								<label class="max-price">                                     <!-- Объединение надписи с полем ввода максимальной цены -->
+									до <input name="max-price" type="text" value="15000">     <!-- Поле ввода максимальной цены -->
+								</label>
+							<div>
+						</div> 
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<label>
+							<input type="radio" name="grid" value="a" checked>Адаптивная
+						</label>
+						<label>
+							<input type="radio" name="grid" value="f">Фиксированная
+						</label>
+						<label>
+							<input type="radio" name="grid" value="r">Резиновая
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<label>
+							<input type="checkbox" name="Slider" checked>Слайдер
+						</label>
+						<label>
+							<input type="checkbox" name="Benefits">Блок приемуществ
+						</label>
+						<label>
+							<input type="checkbox" name="News" checked>Новости
+						</label>
+						<label>
+							<input type="checkbox" name="Gallery">Галерея
+						</label>
+						<label>
+							<input type="checkbox" name="Basket">Корзина
+						</label>
+					</fieldset>
+					<div class="btn-show">
+						<input type="submit" value="Показать">
+					</div>
+				</form>
+				<div class="catalog-items">
+					<div class="sort">
+						<h4>Сортировать:</h4>
+						<a href="#">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По функционалу</a>
+						<a href="#"><!--Стрелка вниз зелёная--></a>
+						<a href="#"><!--Стрелка вверх серая--></a>
+					</div>
+					<article class="catalog-item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+						</div>
+						<div class="catalog-item-image">
+							<img widht="240" height="240" src="Aviator.png" alt="Макет-Aviator">
+						</div>
+					</article>
+					<article class="catalog-item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+						</div>
+						<div class="catalog-item-image">
+							<img widht="240" height="240" src="Sunset.png" alt="Макет-Sunset">
+						</div>
+					</article>
+					<article class="catalog-item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+						</div>
+						<div class="catalog-item-image">
+							<img widht="240" height="240" src="Forte.png" alt="Макет-Forte">
+						</div>
+					</article>
+					<article class="catalog-item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+						</div>
+						<div class="catalog-item-image">
+							<img widht="240" height="240" src="Mod_Org_Thai.png" alt="Макет-Modern_Organic_Thai">
+						</div>
+					</article>
+					<article class="catalog-item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+						</div>
+						<div class="catalog-item-image">
+							<img widht="240" height="240" src="Avenue.png" alt="Макет-Avenue">
+						</div>
+					</article>
+					<article class="catalog-item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+						</div>
+						<div class="catalog-item-image">
+							<img widht="240" height="240" src="Dovetail.png" alt="Макет-Dovetail">
+						</div>
+					</article>
+				</div>
+				<div class="catalog-pages">
+					<input type="submit" name="pages-1" value="1">
+					<input type="submit" name="pages-2" value="2">
+					<input type="submit" name="pages-3" value="3">
+					<input type="submit" value="Следующая">
+				</div>
+			</div>
+			<div class="map">
+				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=l2jfFIpwlIAwtQn-FEKkex8V4qbND8bM&width=1200&height=415&lang=ru_RU&sourceType=constructor"></script>
+			</div>
+		</div>
+
+
+		<footer class="main-footer">
+			<div class="container">
+				<div class="footer-social">
+					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+					<a href="#" class="social-btn social-btn-Inst">Инстаграм</a>
+				</div>
+				<h1>Давайте дружить, это выгодно!</h1>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<!--Все макеты:
+
+— Контентная область центрируется и не может быть уже макетной ширины.
+— Логотип — это ссылка на главную страницу.
+— Блок карты — достаточная реализация — обычное изображение.
+— Блок карты — реализация по желанию — интерактивная карта (карты Google или Яндекса), высота карты постоянная, ширина подстраивается под ширину вьюпорта (но не уже контентной ширины макета), на карте размещён маркер, центр карты соответствует центру блока в макете.
+— Блок карты: по клику на кнопку «напишите нам» возникает модальное окно с формой отправки сообщения (смотрите папку слоёв «write us» в nerds-index.psd), окно позиционируется относительно вьюпорта, а не страницы.
+
+nerds-catalog.psd:
+
+— Блок «Стоимость» — при наведении на любой из маркеров появляется указатель `cursor: pointer`, делать маркеры подвижными не обязательно, цена меняться не должна.
+— Фильтр (блоки «Сетка», «Особенности») верстать с помощью формы, кнопка «Показать» отвечает за отправку формы, при выключенном JavaScript должен осуществляться переход на отдельную страницу (отдельную страницу верстать не нужно).
+— Карточка товара: название товара является ссылкой, клик по нему открывает модальное окно с демонстрацией товара (макета нет, модальное окно не делать).
+— Количество товаров в правом блоке может быть любым, оно не должно ломать страницу.
+
